@@ -1,0 +1,18 @@
+<div class="col-md-4">
+
+  <div class="card">
+    <div class="card-header">
+      Component1 - {{data}}
+    </div>
+
+    <div class="card-block">
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="msg">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" (click)="_sharedService.publishData(msg)">Send</button>
+      </div>
+    </div>
+  </div>
+
+</div>
